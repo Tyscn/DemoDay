@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>password to TicTacToe</title>
+  <style>
+
+
+    body{
+      background-color: crimson;
+    }
+  </style>
+</head>
+<body>
+  <center><h1>Middle School Techies</h1>
+</center>
+  <script>
+
+    
+    function confirmPassword() {
+      var password = document.getElementById("passwordBox");
+      var passwordText = password.value;
+      if(passwordText =="YGT") {
+        return true;
+      }
+    alert ("Access Denied! Incorrect Password");
+    return false;
+    }
+    </script>
+    <center>
+  <p> Please enter passowrd to gain access:</p>
+  <p> Password: <input id="passwordBox" type="password"/>
+    <a href="index.html" onclick=" return confirmPassword()">
+    click here</a>
+  </center>
+</body>
+
+
+</html>
